@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+	<!--contains the title of the page-->
     <head>
         <meta character="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="author" content="Kaci Bradbury Kus" />
         <title>Kaci Kus | Home</title>
-        <link rel="stylesheet" href="css/main.css" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
     </head>
+	<!--body elements go here-->
+	<body class="home-screen">
+		<div class="container">
+			<div id="header">
+				<!--Title that will be centered on page and will link to home page-->
+				<div class="HomeTitle">
+					<a id="name" href="index.html">KACI BRADBURY KUS</a>
+				</div>
+				<!--Create links that will be in the header of every page-->
+				<div id="links">
+					<a id="about" href="about.html">About</a>
+					<a id="contact" href="contact.html">Contact</a>
+					<a id="portfolio" href="portfolio.html">Portfolio</a>
+				</div>
+			</div>
+			
+			<div class="body-main">
+				<!--This is the code for the two instagram links, photos, and captions-->
+				<div class="reviews">
+					<div class="rev">
+						<iframe src="https://snapwidget.com/embed/697505" name="food" scrolling="no"></iframe>
+						<a href="https://www.instagram.com/afriendwithbenedicts/?hl=en" target="food">
+							Brunch <br /> Reviews <br /> <span id="arrow">&rarr;</span>
+						</a>
+					</div>
 
-    <body>
-        <div class="home-screen">
-            <a class="hello">I LOVE YOU KACI</a>
-        </div>
-    </body>
+					<div class="rev">
+						<iframe src="https://snapwidget.com/embed/697521" name="movies" scrolling="no"></iframe>
+						<a href="https://www.instagram.com/gneissmoviereviews/?hl=en" target="movies">
+							Movie <br /> Reviews<br /> <span id="arrow">&rarr;</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body>
 </html>
