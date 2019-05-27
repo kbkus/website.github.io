@@ -2,21 +2,23 @@
 .home-screen
 {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
-    background-color: #A9A9A9;
+    background-color: rgba(169, 169, 169, 0);
 }
 
 .container
 {
-    background: url("../Images/home-screen-background.JPG") no-repeat center center fixed;
+    background: url("../Images/mist.jpg") no-repeat center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
     position: absolute;
     margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    overflow-y: scroll;
 }
 
 .home-screen #links a 
@@ -26,6 +28,13 @@
     text-decoration:none;
     color: white;
 }
+
+/* use this if you want the header to scroll down the page as you scroll */
+/* #header
+{
+    position:fixed;
+    width: 100%;
+} */
 
 /* put all of the links in the top right hand corner adjacent to
 one another */
@@ -70,7 +79,7 @@ one another */
     right: 0;
     bottom: 0;
     left: 0;
-    width: 90%;
+    width: 75%;
     height: 75%;
 }
 
@@ -79,7 +88,6 @@ one another */
 }
 
 .reviews a {
-    text-align: center;
     font-family: Georgia;
     font-size: 72px;
     text-decoration: none;
@@ -87,7 +95,7 @@ one another */
     display: block
 }
 
-.reviews iframe {
+.rev iframe {
     border: none;
     overflow: hidden;
     width: 300px;
@@ -96,8 +104,9 @@ one another */
 
 .rev {
     display: inline-block;
-    width: 30%;
-    height: 50%;
+    text-align: center;
+    width: 300px;
+    height: 300px;
     padding: 10px;
     margin: 50px;
 }
@@ -108,7 +117,7 @@ one another */
     display: table;
 }
 
-#brunch
+/* #brunch
 {
     position:absolute;
     top: 500px;
@@ -130,7 +139,7 @@ one another */
     font-size: 72px;
     text-decoration:none;
     color: white;
-}
+} */
 
 #arrow 
 {
@@ -153,6 +162,9 @@ one another */
     transition-duration:0.2s;
     background-color: rgba(255, 255, 255, 0.445);
     transition-timing-function: ease-in;
+    /* position: fixed; */
+    /* put the position as fixed if you want the header to scroll
+    down the page as you scroll */
 }
 /* not sure why this has to be separate from the other hover
 this changes the color of the links*/
@@ -164,13 +176,3 @@ this changes the color of the links*/
 {
     color:black;
 }
-
-/* .reviews #brunch:hover>#shadebox
-{
-    position: fixed;
-    height: 100vh;
-    width: 100vh;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.548)
-    
-} */
