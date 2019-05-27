@@ -1,0 +1,178 @@
+@font-face { font-family: Ailerons-Regular; src: url('../Fonts/Ailerons-Regular.otf'); }
+.home-screen
+{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    background-color: rgba(169, 169, 169, 0);
+}
+
+.container
+{
+    background: url("../Images/mist.jpg") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    margin: auto;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    overflow-y: scroll;
+}
+
+.home-screen #links a 
+{
+    font-family: Verdana;
+    font-size: 15px;
+    text-decoration:none;
+    color: white;
+}
+
+/* use this if you want the header to scroll down the page as you scroll */
+/* #header
+{
+    position:fixed;
+    width: 100%;
+} */
+
+/* put all of the links in the top right hand corner adjacent to
+one another */
+.home-screen #links #about
+{
+    position: absolute;
+    top: 45px;
+    right: 16px;
+}
+.home-screen #links #contact
+{
+    position: absolute;
+    top: 45px;
+    right: 75px;
+}
+.home-screen #links #portfolio
+{
+    position: absolute;
+    top: 45px;
+    right: 150px;
+}
+
+.home-screen .HomeTitle a
+{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    font-family: Ailerons-Regular;
+    font-size: 30px;
+    text-decoration:none;
+    color: white;  
+    letter-spacing: 1.5x;
+}
+
+.body-main {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: 75%;
+}
+
+.reviews {
+    margin: auto;
+}
+
+.reviews a {
+    font-family: Georgia;
+    font-size: 72px;
+    text-decoration: none;
+    color: white;
+    display: block
+}
+
+.rev iframe {
+    border: none;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.rev {
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 50px;
+}
+  
+.reviews::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* #brunch
+{
+    position:absolute;
+    top: 500px;
+    left: 400px;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 72px;
+    text-decoration:none;
+    color: white;
+}
+
+#movies
+{
+    position:absolute;
+    top: 500px;
+    left:-400px;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 72px;
+    text-decoration:none;
+    color: white;
+} */
+
+#arrow 
+{
+    position: relative;
+    top: -50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+} 
+
+/*hover affects for the header */
+#header:hover
+{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100px;
+    width: 100%;
+    margin-top: 0px;
+    border:0;
+    transition-duration:0.2s;
+    background-color: rgba(255, 255, 255, 0.445);
+    transition-timing-function: ease-in;
+    /* position: fixed; */
+    /* put the position as fixed if you want the header to scroll
+    down the page as you scroll */
+}
+/* not sure why this has to be separate from the other hover
+this changes the color of the links*/
+#header:hover>.HomeTitle #name 
+{
+    color:black;
+}
+#header:hover>#links a
+{
+    color:black;
+}
