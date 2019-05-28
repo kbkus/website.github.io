@@ -1,21 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+	<!--contains the title of the page-->
+    <head>
         <meta character="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="author" content="Kaci Bradbury Kus" />
-		<title>Kaci Kus</title>
-		<link rel="stylesheet" href="css/index_style.css" type="text/css"/>
-		<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/lydn/5cnZ/+XJ2f/lydn/5cnZ/+XJ2QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+XJnf/lydn/5cn//+XJ///lyf//5cn//+XJ///lyf//5cnZ/+XJnQAAAAAAAAAAAAAAAAAAAAAAAAAA/+XJnf/lyf84LiP/OC4j///lyf//5cn//+XJ///lyf//5cn/OC4j/zguI8z/5cmdAAAAAAAAAAAAAAAA/+XJnf/lyf//5cn/OC4j/zguI///5cn//+XJ///lyf//5cn/OC4j/zguI/84LiPM/+XJ///lyZ0AAAAAAAAAAP/lydn/5cn//+XJ/zguI/84LiP//+XJ///lyf//5cn/OC4j/zguI/84LiP//+XJ///lyf//5cnZAAAAAP/lydn/5cn//+XJ///lyf84LiP/OC4j///lyf//5cn/OC4j/zguI/84LiP//+XJ///lyf//5cn//+XJ///lydn/5cnZ/+XJ///lyf//5cn/OC4j/zguI///5cn/OC4j/zguI/84LiP//+XJ///lyf//5cn//+XJ///lyf//5cnZ/+XJ2f/lyf//5cn//+XJ/zguI/84LiP/OC4j/zguI/84LiP//+XJ///lyf//5cn//+XJ///lyf//5cn//+XJ2f/lydn/5cn//+XJ///lyf84LiP/OC4j/zguI/84LiP//+XJ///lyf//5cn//+XJ///lyf//5cn//+XJ///lydn/5cnZ/+XJ///lyf//5cn/OC4j/zguI/84LiP/OC4j/zguI///5cn//+XJ///lyf//5cn//+XJ///lyf//5cnZ/+XJ2f/lyf//5cn//+XJ/zguI/84LiP//+XJ/zguI/84LiP/OC4j///lyf//5cn//+XJ///lyf//5cn//+XJ2QAAAAD/5cnZ/+XJ///lyf84LiP/OC4j///lyf//5cn/OC4j/zguI/84LiP//+XJ///lyf//5cn//+XJ2QAAAAAAAAAA/+XJnf/lyf//5cn/OC4j/zguI///5cn//+XJ///lyf84LiP/OC4j/zguI///5cn//+XJ///lyZ0AAAAAAAAAAAAAAAD/5cmd/+XJ/zguI/84LiP//+XJ///lyf//5cn//+XJ/zguI/84LiOUOC4jlP/lyZ0AAAAAAAAAAAAAAAAAAAAAAAAAAP/lyZ3/5cn//+XJ///lyf//5cn//+XJ///lyf//5cn//+XJ///lyZ0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/lydn/5cnZ/+XJ2f/lydn/5cnZ/+XJ2QAAAAAAAAAAAAAAAAAAAAAAAAAA+B8AAOAHAADAAwAAgAEAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAgAEAAMADAADgBwAA+B8AAA==" rel="icon" type="image/x-icon" />
-		<script src="../blurry.js"></script>
-	</head>
+        <title>Kaci Kus | Home</title>
+		<link rel="stylesheet" href="css/home_style.css" type="text/css"/>
+		<!-- for FF, Chrome, Opera
+		<link rel="icon" type="image/png" href="../Images/icon.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="../Images/icon.png" sizes="32x32">
 
-	<body>
+		<link rel="icon" type="image/x-icon" href="../Images/icon.ico" >
+		<link rel="shortcut icon" type="image/x-icon" href="../Images/icon.ico"/> -->
+		<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/lydn/5cnZ/+XJ2f/lydn/5cnZ/+XJ2QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+XJnf/lydn/5cn//+XJ///lyf//5cn//+XJ///lyf//5cnZ/+XJnQAAAAAAAAAAAAAAAAAAAAAAAAAA/+XJnf/lyf84LiP/OC4j///lyf//5cn//+XJ///lyf//5cn/OC4j/zguI8z/5cmdAAAAAAAAAAAAAAAA/+XJnf/lyf//5cn/OC4j/zguI///5cn//+XJ///lyf//5cn/OC4j/zguI/84LiPM/+XJ///lyZ0AAAAAAAAAAP/lydn/5cn//+XJ/zguI/84LiP//+XJ///lyf//5cn/OC4j/zguI/84LiP//+XJ///lyf//5cnZAAAAAP/lydn/5cn//+XJ///lyf84LiP/OC4j///lyf//5cn/OC4j/zguI/84LiP//+XJ///lyf//5cn//+XJ///lydn/5cnZ/+XJ///lyf//5cn/OC4j/zguI///5cn/OC4j/zguI/84LiP//+XJ///lyf//5cn//+XJ///lyf//5cnZ/+XJ2f/lyf//5cn//+XJ/zguI/84LiP/OC4j/zguI/84LiP//+XJ///lyf//5cn//+XJ///lyf//5cn//+XJ2f/lydn/5cn//+XJ///lyf84LiP/OC4j/zguI/84LiP//+XJ///lyf//5cn//+XJ///lyf//5cn//+XJ///lydn/5cnZ/+XJ///lyf//5cn/OC4j/zguI/84LiP/OC4j/zguI///5cn//+XJ///lyf//5cn//+XJ///lyf//5cnZ/+XJ2f/lyf//5cn//+XJ/zguI/84LiP//+XJ/zguI/84LiP/OC4j///lyf//5cn//+XJ///lyf//5cn//+XJ2QAAAAD/5cnZ/+XJ///lyf84LiP/OC4j///lyf//5cn/OC4j/zguI/84LiP//+XJ///lyf//5cn//+XJ2QAAAAAAAAAA/+XJnf/lyf//5cn/OC4j/zguI///5cn//+XJ///lyf84LiP/OC4j/zguI///5cn//+XJ///lyZ0AAAAAAAAAAAAAAAD/5cmd/+XJ/zguI/84LiP//+XJ///lyf//5cn//+XJ/zguI/84LiOUOC4jlP/lyZ0AAAAAAAAAAAAAAAAAAAAAAAAAAP/lyZ3/5cn//+XJ///lyf//5cn//+XJ///lyf//5cn//+XJ///lyZ0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/lydn/5cnZ/+XJ2f/lydn/5cnZ/+XJ2QAAAAAAAAAAAAAAAAAAAAAAAAAA+B8AAOAHAADAAwAAgAEAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAgAEAAMADAADgBwAA+B8AAA==" rel="icon" type="image/x-icon" />
+	</head>
+	
+	<!--body elements go here-->
+	<body class="home-screen">
 		<div class="container">
-			<div id="pic" class="banner">
-			<h2>KACI BRADBURY KUS</h2>
-			<a class="link" href="home.html"><span>ENTER</span></a>
+			<div id="header">
+				<!--Title that will be centered on page and will link to home page-->
+				<div class="HomeTitle">
+					<a id="name" href="index.html">KACI BRADBURY KUS</a>
+				</div>
+				<!--Create links that will be in the header of every page-->
+				<div id="links">
+					<a id="about" href="about.html">About</a>
+					<a id="contact" href="contact.html">Contact</a>
+					<a id="portfolio" href="portfolio.html">Portfolio</a>
+				</div>
 			</div>
-		  </div>
+
+			<div class="body-main">
+				<!--This is the code for the two instagram links, photos, and captions-->
+				<div class="reviews">
+					<div class="rev">
+						<iframe src="https://snapwidget.com/embed/697585" name="food" scrolling="no"></iframe>
+						<a href="https://www.instagram.com/afriendwithbenedicts/?hl=en" target="_blank">
+						Brunch<br />Reviews<br /> <span id="arrow">&rarr;</span>
+						</a>
+					</div>
+
+					<div class="rev">
+						<iframe src="https://snapwidget.com/embed/697521" name="movies" scrolling="no"></iframe>
+						<a href="https://www.instagram.com/gneissmoviereviews/?hl=en" target="_blank">
+							Movie <br /> Reviews<br /> <span id="arrow">&rarr;</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>	
 	</body>
 </html>
