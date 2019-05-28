@@ -23,7 +23,7 @@
 
 .home-screen #links a 
 {
-    font-family: Verdana;
+    font-family: Ailerons-Regular;
     font-size: 15px;
     text-decoration:none;
     color: white;
@@ -80,7 +80,7 @@ one another */
     bottom: 0;
     left: 0;
     width: 75%;
-    height: 75%;
+    height: 60%;
 }
 
 .reviews {
