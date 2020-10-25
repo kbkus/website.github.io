@@ -1,0 +1,120 @@
+@font-face { font-family: Ailerons-Regular; src: url('../Fonts/Ailerons-Regular.otf'); }
+.hashtag-generator
+{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    background-color: rgba(169, 169, 169, 0);
+}
+
+.container
+{
+    background: url("../Images/hashtag_generator_background.jpg") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    margin: auto;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    overflow-y: scroll;
+}
+
+.HomeTitle a
+{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    font-family: Ailerons-Regular;
+    font-size: 30px;
+    text-decoration:none;
+    color: white;  
+    letter-spacing: 1.5x;
+}
+
+.body-main {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: 60%;
+}
+
+#links a 
+{
+    font-family: Ailerons-Regular;
+    font-size: 15px;
+    text-decoration:none;
+    color: white;
+}
+
+/* use this if you want the header to scroll down the page as you scroll */
+/* #header
+{
+    position:fixed;
+    width: 100%;
+} */
+
+/* put all of the links in the top right hand corner adjacent to
+one another */
+#links #about
+{
+    position: absolute;
+    top: 45px;
+    right: 16px;
+}
+#links #contact
+{
+    position: absolute;
+    top: 45px;
+    right: 75px;
+}
+#links #portfolio
+{
+    position: absolute;
+    top: 45px;
+    right: 150px;
+}
+
+#links #hashtag_project
+{
+    position: absolute;
+    top: 45px;
+    right: 250px;
+}
+
+
+/*hover affects for the header */
+#header:hover
+{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100px;
+    width: 100%;
+    margin-top: 0px;
+    border:0;
+    transition-duration:0.2s;
+    background-color: rgba(255, 255, 255, 0.445);
+    transition-timing-function: ease-in;
+    /* position: fixed; */
+    /* put the position as fixed if you want the header to scroll
+    down the page as you scroll */
+}
+/* not sure why this has to be separate from the other hover
+this changes the color of the links*/
+#header:hover>.HomeTitle #name 
+{
+    color:black;
+}
+#header:hover>#links a
+{
+    color:black;
+}
