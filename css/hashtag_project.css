@@ -47,6 +47,20 @@
     height: 60%;
 }
 
+#opening-note
+{
+    font-family: Ailerons-Regular;
+    font-size: 30px;
+    color: black;
+}
+
+#instructions
+{
+    font-family: Helvetica;
+    font-size: 15px;
+    color: black;
+}
+
 #links a 
 {
     font-family: Ailerons-Regular;
@@ -90,6 +104,18 @@ one another */
     right: 250px;
 }
 
+.body-main {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: 60%;
+}
 
 /*hover affects for the header */
 #header:hover
