@@ -57,6 +57,13 @@ one another */
     right: 150px;
 }
 
+.home-screen #links #hashtag_project
+{
+    position: absolute;
+    top: 45px;
+    right: 250px;
+}
+
 .home-screen .HomeTitle a
 {
     width: 100%;
