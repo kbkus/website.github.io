@@ -1,5 +1,5 @@
 @font-face { font-family: Ailerons-Regular; src: url('../Fonts/Ailerons-Regular.otf'); }
-.contact
+.about
 {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     background-color: rgba(169, 169, 169, 0);
@@ -21,7 +21,7 @@
     overflow-y: scroll;
 }
 
-.contact #links a 
+.about #links a 
 {
     font-family: Ailerons-Regular;
     font-size: 15px;
@@ -38,33 +38,33 @@
 
 /* put all of the links in the top right hand corner adjacent to
 one another */
-.contact #links #about
+.about #links #about
 {
     position: absolute;
     top: 45px;
     right: 16px;
 }
-.contact #links #contact
+.about #links #contact
 {
     position: absolute;
     top: 45px;
     right: 75px;
 }
-.contact #links #portfolio
+.about #links #portfolio
 {
     position: absolute;
     top: 45px;
     right: 150px;
 }
 
-.contact #links #hashtag_project
+.about #links #hashtag_project
 {
     position: absolute;
     top: 45px;
     right: 250px;
 }
 
-.contact .ContactTitle a
+.about .AboutTitle a
 {
     width: 100%;
     position: absolute;
@@ -90,10 +90,10 @@ one another */
     height: 60%;
 }
 
-.contact-info {
+.about-info {
     width: 100%;
     position: absolute;
-    text-align: center;
+    text-align: left;
     top: 30px;
     font-family: Courier New;
     font-size: 15px;
@@ -130,7 +130,7 @@ one another */
 }
 /* not sure why this has to be separate from the other hover
 this changes the color of the links*/
-#header:hover>.ContactTitle #name 
+#header:hover>.AboutTitle #name 
 {
     color:black;
 }

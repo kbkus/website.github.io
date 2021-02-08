@@ -124,30 +124,6 @@ one another */
     display: table;
 }
 
-/* #brunch
-{
-    position:absolute;
-    top: 500px;
-    left: 400px;
-    text-align: center;
-    font-family: Georgia;
-    font-size: 72px;
-    text-decoration:none;
-    color: white;
-}
-
-#movies
-{
-    position:absolute;
-    top: 500px;
-    left:-400px;
-    text-align: center;
-    font-family: Georgia;
-    font-size: 72px;
-    text-decoration:none;
-    color: white;
-} */
-
 #arrow 
 {
     position: relative;
