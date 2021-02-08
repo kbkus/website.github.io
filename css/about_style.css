@@ -79,36 +79,31 @@ one another */
 
 .body-main {
     text-align: center;
-    vertical-align: middle;
-    position: absolute;
     margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     width: 75%;
     height: 60%;
+    padding: 100px; 
 }
 
-.profile-photo {
-    margin-right:2%;
-    float:right;
-    position:relative;
-    
-}
 
-.about-info {
-    float: left;
-    width: 500px;
-    padding:1%;
-    position: absolute;
+
+.column {
+    width: 45%;
+    margin: 1%;
     text-align: left;
-    top: 30px;
-    font-family: Geneva;
-    font-size: 15px;
-    text-decoration:none;
-    color: black;  
-    letter-spacing: 1.5x;   
+    float: left;
+}
+
+#left {
+    background-color: rgba(255, 255, 239, 0.541);
+    padding: 1%;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
 }
 
 
