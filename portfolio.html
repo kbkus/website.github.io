@@ -41,7 +41,9 @@
                         my <a href="https://github.com/kbkus" style="text-decoration: None" target="_blank">GitHub</a> to see my portfolio.
                     </h1>
                     <h1>Research Projects</h1>
+                    <hr style="width:75%;margin-left:auto; margin-right:auto; color:white">
                     <p>Current and past</p>
+                    <hr style="width:30%;margin-left:auto; margin-right:auto; color:white">
 
                     <div class="research-title" id="AutoMin">
                         <h3>
@@ -64,6 +66,8 @@
                         </div>   
                     </div>
 
+                    <hr style="width:75%;margin-left:auto; margin-right:auto; color:white">
+
                     <div class="research-title" id="HashtagRec">
                         <h3>
                             <b>Hashtag Recommender (Winter 2020)</b>
@@ -76,6 +80,12 @@
 
                         <p><i>Completed project to improve social media engagement</i></p>
                         <div class="explaination">
+                            <video controls="controls" width="600" src="Videos/hashtag-rec-demo.mov" style="width:100%; max-width:600px; display:block; margin-left:auto; margin-right:auto"></video>
+                            <p style="text-align:center">
+                                <i>Recommender system web-app deployed on AWS EC2 instance. Unfortunately it was too expensive for me
+                                    to maintain at this time!
+                                </i>
+                            </p>
                             <p>
                                 Instagram has over <b>1 billion users</b>, and over <b>500 million</b> daily active users.
                                 As one of the most highly used social media apps, many people use it as a business tool for 
@@ -90,6 +100,24 @@
                             <img src="Images/hashtag_rec_workflow.png" width="600" style="width:100%; max-width:600px;display: block; margin-left:auto; margin-right:auto">
                             <p style="text-align:center">
                                 <i>Recommender system workflow</i>
+                            </p>
+                                I built a modular web-scraper to collect >5,324 posts from Instagram's discover page using hashtags 
+                                related to: cats, technology, food, and travel. The recommender system works by using the pre-trained convolutional 
+                                neural network (CNN) <b>MobileNetV2</b> to extract <b>deep features</b> from each image and store those features
+                                in a database along with the hashtags used and number of likes associated with each post.
+                            <p>       
+                            <p>
+                                When a user uploads a new image to the recommender, deep features will be extracted. <b>K-nearest neighbors</b>
+                                will then be used to determine the <b>6</b> most similar photos in the database. All of the hashtags used on those
+                                6 most similar photos will then be used to find the <b>50</b> most semantically similar hashtags from the entire
+                                database of <b>>31,500 unique hashtags</b>. Each hashtag was also given a <b>rating</b> to normalize (1) how often it 
+                                is used, and (2) how many likes are typically associated with it. 
+                            </p>
+                            <p>
+                                The final recommendation is the top 10, 20, or 30 hashtags that are most similar to the image <b>AND</b>
+                                have the highest rating score.
+                            </p>
+
                             </p>
                         </div>
                     </div>
