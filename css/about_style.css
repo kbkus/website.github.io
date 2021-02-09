@@ -38,17 +38,17 @@
 
 /* put all of the links in the top right hand corner adjacent to
 one another */
-.about #links #about
+.about #links #hobbies
 {
     position: absolute;
     top: 45px;
-    right: 16px;
+    right: 250px;
 }
 .about #links #contact
 {
     position: absolute;
     top: 45px;
-    right: 75px;
+    right: 70px;
 }
 .about #links #portfolio
 {
@@ -57,12 +57,12 @@ one another */
     right: 150px;
 }
 
-.about #links #hashtag_project
+/* .about #links #hashtag_project
 {
     position: absolute;
     top: 45px;
     right: 250px;
-}
+} */
 
 .about .AboutTitle a
 {
@@ -143,3 +143,8 @@ this changes the color of the links*/
 {
     color:black;
 }
+
+/* #hobbies:hover {
+    text-decoration: underline;
+} */
+

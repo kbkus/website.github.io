@@ -38,17 +38,17 @@
 
 /* put all of the links in the top right hand corner adjacent to
 one another */
-.contact #links #about
+.contact #links #hobbies
 {
     position: absolute;
     top: 45px;
-    right: 16px;
+    right: 250px;
 }
 .contact #links #contact
 {
     position: absolute;
     top: 45px;
-    right: 75px;
+    right: 70px;
 }
 .contact #links #portfolio
 {
@@ -57,12 +57,12 @@ one another */
     right: 150px;
 }
 
-.contact #links #hashtag_project
+/* .contact #links #hashtag_project
 {
     position: absolute;
     top: 45px;
     right: 250px;
-}
+} */
 
 .contact .ContactTitle a
 {

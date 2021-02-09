@@ -1,5 +1,5 @@
 @font-face { font-family: Ailerons-Regular; src: url('../Fonts/Ailerons-Regular.otf'); }
-.home-screen
+.hobbies-screen
 {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     background-color: rgba(169, 169, 169, 0);
@@ -21,7 +21,7 @@
     overflow-y: scroll;
 }
 
-.home-screen #links a 
+.hobbies-screen #links a 
 {
     font-family: Ailerons-Regular;
     font-size: 15px;
@@ -38,33 +38,33 @@
 
 /* put all of the links in the top right hand corner adjacent to
 one another */
-.home-screen #links #about
+.hobbies-screen #links #hobbies
 {
     position: absolute;
     top: 45px;
-    right: 16px;
+    right: 250px;
 }
-.home-screen #links #contact
+.hobbies-screen #links #contact
 {
     position: absolute;
     top: 45px;
-    right: 75px;
+    right: 70px;
 }
-.home-screen #links #portfolio
+.hobbies-screen #links #portfolio
 {
     position: absolute;
     top: 45px;
     right: 150px;
 }
 
-.home-screen #links #hashtag_project
+/* .hobbies-screen #links #hashtag_project
 {
     position: absolute;
     top: 45px;
     right: 250px;
-}
+} */
 
-.home-screen .HomeTitle a
+.hobbies-screen .HobbiesTitle a
 {
     width: 100%;
     position: absolute;
@@ -151,7 +151,7 @@ one another */
 }
 /* not sure why this has to be separate from the other hover
 this changes the color of the links*/
-#header:hover>.HomeTitle #name 
+#header:hover>.HobbiesTitle #name 
 {
     color:black;
 }

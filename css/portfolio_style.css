@@ -41,17 +41,17 @@
 
 /* put all of the links in the top right hand corner adjacent to
 one another */
-.portfolio #links #about
+.portfolio #links #hobbies
 {
     position: absolute;
     top: 45px;
-    right: 16px;
+    right: 250px;
 }
 .portfolio #links #contact
 {
     position: absolute;
     top: 45px;
-    right: 75px;
+    right: 70px;
 }
 .portfolio #links #portfolio
 {
@@ -60,12 +60,12 @@ one another */
     right: 150px;
 }
 
-.portfolio #links #hashtag_project
+/* .portfolio #links #hashtag_project
 {
     position: absolute;
     top: 45px;
     right: 250px;
-}
+} */
 
 .portfolio .PortfolioTitle a
 {
