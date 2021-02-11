@@ -107,9 +107,22 @@ one another */
     margin-right: auto;
 } 
 
+#p-bold {
+    color: gold;
+}
+
 #project-link {
     color: rgb(196, 255, 255);
     text-decoration: None;
+}
+
+#p-link {
+    color: gold;
+    text-decoration: None;
+}
+
+#p-link:hover {
+    text-decoration: underline;
 }
 
 #project-link:hover {

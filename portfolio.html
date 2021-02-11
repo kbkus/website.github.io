@@ -89,12 +89,12 @@
                                 </i>
                             </p>
                             <p>
-                                Instagram has over <b>1 billion users</b>, and over <b>500 million</b> daily active users.
+                                Instagram has over <b id="p-bold">1 billion users</b>, and over <b id="p-bold">500 million</b> daily active users.
                                 As one of the most highly used social media apps, many people use it as a business tool for 
                                 relatively "free" advertising. Moreover, if a user gains enough followers, they can even use their
                                 platform to earn a living through brand sponsorships.
                                 <br><br>
-                                <p style="text-align:center"><b><i>FOLLOWERS</i> = <i>MONEY</i></b></p> 
+                                <p style="text-align:center"><b id="p-bold"><i>FOLLOWERS</i> = <i>MONEY</i></b></p> 
                                 <br>
                                 The goal of this project was to build a tool that would take in any photo as input and return
                                 a list of related hashtags that is optimized to get the most engagement.
@@ -105,18 +105,18 @@
                             </p>
                                 I built a modular web-scraper to collect >5,324 posts from Instagram's discover page using hashtags 
                                 related to: cats, technology, food, and travel. The recommender system works by using the pre-trained convolutional 
-                                neural network (CNN) <b>MobileNetV2</b> to extract <b>deep features</b> from each image and store those features
+                                neural network (CNN) <b id="p-bold">MobileNetV2</b> to extract <b id="p-bold">deep features</b> from each image and store those features
                                 in a database along with the hashtags used and number of likes associated with each post.
                             <p>       
                             <p>
-                                When a user uploads a new image to the recommender, deep features will be extracted. <b>K-nearest neighbors</b>
-                                will then be used to determine the <b>6</b> most similar photos in the database. All of the hashtags used on those
-                                6 most similar photos will then be used to find the <b>50</b> most semantically similar hashtags from the entire
-                                database of <b>>31,500 unique hashtags</b>. Each hashtag was also given a <b>rating</b> to normalize (1) how often it 
+                                When a user uploads a new image to the recommender, deep features will be extracted. <b id="p-bold">K-nearest neighbors</b>
+                                will then be used to determine the <b id="p-bold">6</b> most similar photos in the database. All of the hashtags used on those
+                                6 most similar photos will then be used to find the <b id="p-bold">50</b> most semantically similar hashtags from the entire
+                                database of <b id="p-bold">>31,500 unique hashtags</b>. Each hashtag was also given a <b id="p-bold">rating</b> to normalize (1) how often it 
                                 is used, and (2) how many likes are typically associated with it. 
                             </p>
                             <p>
-                                The final recommendation is the top 10, 20, or 30 hashtags that are most similar to the image <b>AND</b>
+                                The final recommendation is the top 10, 20, or 30 hashtags that are most similar to the image <b id="p-bold">AND</b>
                                 have the highest rating score.
                             </p>
 
@@ -137,6 +137,33 @@
                             </p>
     
                             <p><i>Completed project to predict whether a company's stock price will rise or fall the next day</i></p>
+
+                            <div class="explaination">
+                                <p>Predicting changes in the stock market is not a novel idea, and there is no 
+                                    perfect formula yet -- otherwise we'd all be rich! With that in mind, I wanted
+                                    to take a slightly different approach to prediciting stock-price changes that would be not only accurate, but also
+                                    practical for a <b><a id="p-link" href="https://www.investopedia.com/trading/introduction-to-swing-trading/" target="_blank">swing-trader</a></b>, 
+                                    such as myself.
+                                </p>
+                                <p>
+                                    I coded a web-scraper to gather the 100 most recent news headlines taken from <b><a id="p-link" href="https://finviz.com/" target="_blank">FINVIZ</a></b> 
+                                    for companies in the S&P500 list. I then used the <b><a id="p-link" href="https://pypi.org/project/yfinance/" target="_blank">yfinance python library</a></b>
+                                    to collect the historical stock-price data for each day that I had news headlines for each company.
+                                </p>
+                                <p> 
+                                    By combining sentiment analysis based on news headlines, and stock-price metrics, such as 7-day and 30-day 
+                                    running averages, % price change, standard deviation, etc., I was able to build multiple classification models
+                                    to predict whether the <b id="p-bold">next day</b> price of a stock would <b id="p-bold">RISE or FALL</b>.
+                                    I found <b id="p-bold">gradient boosting</b> to produce the best results, with <b id="p-bold">83% accuracy, and 15% Type II error</b>.
+                                </p>
+                                <img src="Images/stock-results.png" width="600" style="width:100%; max-width:600px;display: block; margin-left:auto; margin-right:auto">
+                                <p style="text-align:center">
+                                    <i>Comparitive results from five classification models. Gradient boosting seems to have the best accuracy
+                                        while also minimizing false negatives. This is important because to mitigate financial risk, it is preferable
+                                        to encounter more Type II errors than Type I errors.
+                                    </i>
+                                </p>
+                            </div>
                     </div>
                 </div>
                 
