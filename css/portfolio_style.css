@@ -129,6 +129,40 @@ one another */
     text-decoration: underline;
 }
 
+.figures {
+    
+    /* align-items: center;
+    justify-content: center;
+    height: 200px;
+    border: 1px;
+    display: flex;
+    text-align: center; */
+
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fig {
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.img {
+    display: block;
+    width: 30%;
+}
+
+.caption {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 
 .column {
     margin: 1%;

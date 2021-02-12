@@ -65,6 +65,37 @@
                             <p style="text-align:center">
                                 <i>Example of thin sections (http://www.microscopy-uk.org.uk/mag/artfeb04/iwouslides2.html)</i>
                             </p>
+                            <p>
+                                Typically a petrologist is able to identify minerals based on their different features and 
+                                color-changes under different light polarizations. An alternative method is to ship samples to
+                                a facility that has the proper instrumentation to shine light down onto the thin section and determine
+                                which mineral each grain is based on the spectrum of light reflected back. The first method is 1. time consuming and 
+                                2. requires years of expertise. The second method is automated and therefore potentially faster,
+                                however it can be very costly and inefficient as most facilities do not have the proper instrumentation to run
+                                this type of analysis in-house.
+                            </p>
+                            <div class="figures">
+                                <div class="fig">
+                                    <img class="img" src="Images/image copy.jpg" width="200" style="width:100%; max-width: 200px;">
+                                    <span class="caption">Thin section under plain-polarized light</span>
+                                </div>
+
+                                <div class="fig">
+                                    <img class="img" src="Images/xplimg copy.png" width="200" style="width:100%; max-width: 200px;">
+                                    <span class="caption">Thin section under plain-polarized light</span>
+                                </div>
+
+                                <div class="fig">
+                                    <img class="img" src="Images/label_img copy.png" width="150" height="180" style="width:100%; max-width:200px; max-height:180px;">
+                                    <span class="caption">False-color mineralogy map produced by <b><a id="p-link" href="https://www.tescan.com/product/tescan-sem-solutions-tescan-tima-for-mineral-processing/"
+                                        target="_blank">TIMA</a></b></span>
+                                </div>
+                            </div>
+                            <p> For this project I <b id="p-bold">developed a novel, semi-automated approach</b> to aligning fine-grained images under different 
+                                lighting conditions. The primary challenge I faced was that the immediate color-relationships between objects in 
+                                the photos is not preserved under different light polarizations, therefore making fully-automated alignment 
+                                nearly impossible. Once image alignment was achieved and I was able to pre-process the necessary images for training
+                                a model, I built a CNN that would classify each pixel as one of 9 mineral grains.</p>
                         </div>   
                     </div>
 
