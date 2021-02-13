@@ -3,20 +3,21 @@
 {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     background-color: rgba(169, 169, 169, 0);
-}
-
-.container
-{
     background: url("../Images/mist.jpg") no-repeat center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.container
+{
     position: absolute;
     margin: auto;
     top: 0%;
     right: 0%;
     bottom: 0%;
+    margin-bottom: 50px;
     left: 0%;
     overflow-y: scroll;
 }
@@ -90,13 +91,21 @@ one another */
     height: 60%;
 }
 
+#footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: white
+}
+
 .reviews {
     margin: auto;
 }
 
 .reviews a {
     font-family: Georgia;
-    font-size: 72px;
+    font-size: 50px;
     text-decoration: none;
     color: white;
     display: block
