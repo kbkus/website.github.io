@@ -89,7 +89,7 @@ one another */
 
 .column {
     width: 45%;
-    text-align: left;
+    text-align: center;
     margin: 1%;
     float: left;
 }
@@ -98,6 +98,7 @@ one another */
     background-color: rgba(255, 255, 239, 0.541);
     padding: 1%;
     border-radius: 10px;
+    text-align: left;
 }
 
 #p-link {
