@@ -33,16 +33,14 @@
                 <br>
                     <a class="side-link" href="#AutoMin" id="project-link">Auto Min</a>
                 <br>
+                    <a class="side-link" href=#Kcquant id="project-link">Kcquant Library</a>
+                <br>
                     <a class="side-link" href=#HashtagRec id="project-link">Hashtag Recommender</a>
                 <br>
                     <a class="side-link" href=#Stonks id="project-link">Stock-Prices</a>
                 </div>
                 
                 <div class="column" id="research">
-                    <h1 style="color:rgb(255, 112, 141)">Welcome! This portfolio page is currently under construction, but please
-                        check back soon as I am actively trying to update my projects (2/8/2021). Please visit
-                        my <a href="https://github.com/kbkus" style="text-decoration: None" target="_blank">GitHub</a> to see my portfolio.
-                    </h1>
                     <h1>Research Projects</h1>
                     <hr style="width:75%;margin-left:auto; margin-right:auto; color:white">
                     <p>Current and past</p>
@@ -53,8 +51,38 @@
                             <b>Automated Mineralogy (Spring 2021)</b>
                         </h3>
                         <a id="project-link" href="https://github.com/kbkus/Automated-Mineralogy" target=" _blank">GitHub Repository</a>
-
                         <p><i>In-progress with Dr. Zane Jobe, Colorado School of Mines</i></p>
+
+                        <div class="skills-container">
+                            <div class="skill-bubble">
+                                <div>Python</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>tkinter</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Pandas</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>NumPy</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Matplotlib</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Tensorflow</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Pillow</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>OpenCV</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Semantic Segmentation</div>
+                            </div>
+                        </div>
+
                         <div class="explaination">
                             <p>
                                 Geologists cut rocks into 0.03 mm thick slices in order to determine their
@@ -104,6 +132,70 @@
 
                     <hr style="width:75%;margin-left:auto; margin-right:auto; color:white">
 
+                    <div class="research-title" id="Kcquant">
+                        <h3>
+                            <b>Color Quantization Python Library (Initiated February 2021)</b>
+                        </h3>
+                        <a id="project-link" href="https://github.com/kbkus/kcquant" target=" _blank">GitHub Repository</a>
+                        //
+                        <a id="project-link" href="https://pypi.org/project/kcquant/#description" target=" _blank">PyPI Documentation</a>
+
+                        <p><i>Ongoing project to create an easy-to-use open-source library for color quantization and exploratory data analysis.</i></p>
+
+                        <div class="skills-container">
+                            <div class="skill-bubble">
+                                <div>Python</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Poetry</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>NumPy</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Matplotlib</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Pillow</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>OpenCV</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Color Quantization</div>
+                            </div>
+                        </div>
+
+                        <div class="explaination">
+                            <p>
+                                Kcquant <b id="p-bold">(short for Kaci Color Quantization)</b> is a passion project of mine to create an <b><a id="p-link" href="https://pypi.org/project/kcquant/#description" target=" _blank">
+                                open-source library</a></b> with useful functions to perform color quantization and exploratory data analysis on images. 
+                        <br>
+                            Currently, kcquant has only 1 function, <i>get_colors()</i>, which takes 5 parameters. <b id="p-bold">Future work</b> will include
+                            <b id="p-bold">1.</b> color quantization methods to reduce the number of pixel values, <b id="p-bold">2.</b> methods to easily plot color frequencies and relationships 
+                            within images, <b id="p-bold">4.</b> methods to compare/overlay images, and <b id="p-bold">5.</b> alignment methods.
+                        <br>
+                            <b id="p-bold"><h3>Parameters:</h3></b>
+                            <li><b id="p-bold">img : </b>image converted to np.array</li>
+                            <li><b id="p-bold">figsize : </b>Set the figure size of one row (containing <i>columns</i> number colors).
+                                Will default to (15,5).</i></li>
+                            <li><b id="p-bold">columns : </b>Number of pixel colors to display in a row. Will 
+                                default to 5.</li>
+                            <li><b id="p-bold">color : </b>Denotes the pixel format of the input image. Will default
+                                to 'BGR'. If your image is already converted to 'RGB', set color='RGB'.</li>
+                            <li><b id="p-bold">top : </b>The number of most frequent pixel values to show. Will
+                                default to 10.</li>
+                        <br>
+                            </p>
+                            <img src="Images/kcquant.png" width="600" style="width:100%; max-width:600px;display: block; margin-left:auto; margin-right:auto">
+                            <p style="text-align:center">
+                                <i>Example of kcquant.get_colors() being used.</i>
+                            </p>
+                        </div>   
+                    </div>
+
+                    <hr style="width:75%;margin-left:auto; margin-right:auto; color:white">
+
                     <div class="research-title" id="HashtagRec">
                         <h3>
                             <b>Hashtag Recommender (Winter 2020)</b>
@@ -117,7 +209,58 @@
                         </p>
 
                         <p><i>Completed project to improve social media engagement</i></p>
+
+                        <div class="skills-container">
+                            <div class="skill-bubble">
+                                <div>Python</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>HTML/CSS</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Flask</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>AWS</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>EC2</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>MobileNetV2 (CNN)</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Pandas</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>NumPy</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Selenium</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Web-scraping</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>K-NN</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Tensorflow</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Word2Vec</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Continuous Bag-of-Words</div>
+                            </div>
+                            <div class="skill-bubble">
+                                <div>Skip-gram</div>
+                            </div>
+                            
+                        </div>
+
                         <div class="explaination">
+                            <br>
                             <video controls="controls" width="600" src="Videos/hashtag-rec-demo.mov" style="width:100%; max-width:600px; display:block; margin-left:auto; margin-right:auto"></video>
                             <p style="text-align:center">
                                 <i>Recommender system web-app deployed on AWS EC2 instance. To keep costs down, my recommender system will only
@@ -172,7 +315,47 @@
                             <a id="project-link" href="Downloadables/StockPricePresentation.pdf" target=" _blank"; download>Presentation</a>
                             </p>
     
-                            <p><i>Completed project to predict whether a company's stock price will rise or fall the next day</i></p>
+                            <p><i>Completed project to predict whether a company's stock price will rise or fall the next day.</i></p>
+
+                            <div class="skills-container">
+                                <div class="skill-bubble">
+                                    <div>Python</div>
+                                </div>
+                                <div class="skill-bubble">
+                                    <div>Supervised Learning</div>
+                                </div>
+                                <div class="skill-bubble">
+                                    <div>Gradient Boosting</div>
+                                </div>
+                                <div class="skill-bubble">
+                                    <div>Random Forest</div>
+                                </div>
+                                <div class="skill-bubble">
+                                    <div>Support Vector Machines</div>
+                                </div>
+                                <div class="skill-bubble">
+                                    <div>Logistic Regression</div>
+                                </div>
+                                <div class="skill-bubble">
+                                    <div>K-NN</div>
+                                </div>
+                                <div class="skill-bubble">
+                                    <div>Pandas</div>
+                                </div>
+                                <div class="skill-bubble">
+                                    <div>BeautifulSoup</div>
+                                </div>
+                                <div class="skill-bubble">
+                                    <div>NumPy</div>
+                                </div>
+                                <div class="skill-bubble">
+                                    <div>NLTK</div>
+                                </div>
+                                <div class="skill-bubble">
+                                    <div>Sentiment Analysis</div>
+                                </div>
+                                
+                            </div>
 
                             <div class="explaination">
                                 <p>Predicting changes in the stock market is not a novel idea, and there is no 
