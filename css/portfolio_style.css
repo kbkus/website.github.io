@@ -60,6 +60,13 @@ one another */
     right: 150px;
 }
 
+.portfolio #links #artwork
+{
+    position: absolute;
+    top: 45px;
+    right: 340px;
+}
+
 /* .portfolio #links #hashtag_project
 {
     position: absolute;
@@ -196,7 +203,7 @@ one another */
     bottom: 0;
     text-align: center;
     width: 100%;
-    color: white;
+    color: rgba(245, 245, 245, 0.562);
 }
 
 

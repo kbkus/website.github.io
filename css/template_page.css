@@ -1,17 +1,19 @@
 @font-face { font-family: Ailerons-Regular; src: url('../Fonts/Ailerons-Regular.otf'); }
-.contact
+.portfolio
 {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     background-color: rgba(169, 169, 169, 0);
-}
-
-.container
-{
-    background: url("../Images/mist.jpg") no-repeat center center fixed;
+    background: url("../Images/portfolio_background.jpg") no-repeat center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    
+}
+
+.container
+{
+    
     position: absolute;
     margin: auto;
     top: 0%;
@@ -19,9 +21,10 @@
     bottom: 0%;
     left: 0%;
     overflow-y: scroll;
+    margin-bottom: 50px;
 }
 
-.contact #links a 
+.portfolio #links a 
 {
     font-family: Ailerons-Regular;
     font-size: 15px;
@@ -38,40 +41,33 @@
 
 /* put all of the links in the top right hand corner adjacent to
 one another */
-.contact #links #hobbies
+.portfolio #links #hobbies
 {
     position: absolute;
     top: 45px;
     right: 250px;
 }
-.contact #links #contact
+.portfolio #links #contact
 {
     position: absolute;
     top: 45px;
     right: 70px;
 }
-.contact #links #portfolio
+.portfolio #links #portfolio
 {
     position: absolute;
     top: 45px;
     right: 150px;
 }
 
-.contact #links #artwork
-{
-    position: absolute;
-    top: 45px;
-    right: 340px;
-}
-
-/* .contact #links #hashtag_project
+/* .portfolio #links #hashtag_project
 {
     position: absolute;
     top: 45px;
     right: 250px;
 } */
 
-.contact .ContactTitle a
+.portfolio .PortfolioTitle a
 {
     width: 100%;
     position: absolute;
@@ -84,29 +80,42 @@ one another */
     letter-spacing: 1.5x;
 }
 
-.body-main {
+.main-body {
     text-align: center;
-    vertical-align: middle;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     width: 75%;
-    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 250px;
 }
 
-.contact-info {
-    width: 100%;
+#p-bold {
+    color: gold;
+}
+
+#project-link {
+    color: rgb(196, 255, 255);
+    text-decoration: None;
+}
+
+#p-link {
+    color: gold;
+    text-decoration: None;
+}
+
+#p-link:hover {
+    text-decoration: underline;
+}
+
+#project-link:hover {
+    text-decoration: underline;
+}
+
+#footer {
     position: absolute;
+    bottom: 0;
     text-align: center;
-    top: 30px;
-    font-family: Courier New;
-    font-size: 15px;
-    text-decoration:none;
-    color: white;  
-    letter-spacing: 1.5x;   
+    width: 100%;
+    color: rgba(245, 245, 245, 0.562);
 }
 
 
@@ -137,7 +146,7 @@ one another */
 }
 /* not sure why this has to be separate from the other hover
 this changes the color of the links*/
-#header:hover>.ContactTitle #name 
+#header:hover>.PortfolioTitle #name 
 {
     color:black;
 }
