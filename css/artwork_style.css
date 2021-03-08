@@ -127,22 +127,33 @@ one another */
 
 
 .body-main {
-    padding-bottom: 250px;
+    /* padding-bottom: 250px;
     width: 90%;
     margin-top: 120px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
+    column-count: 3;
     /* display: flex;
-    align-content:center; */
+    align-content:center; */ 
+    column-count: 3;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
 }
 
 .box {
-    width: 25%;
+    /* width: 25%;
+    height: fit-content;
     background:rgba(245, 245, 245, 0.466);
     position: relative;
     float: left;
@@ -150,10 +161,14 @@ one another */
     min-width: 200px;
     border-radius: 8px;
     overflow: hidden;
-    margin: 5px;
-    
-
-   
+    margin: 5px; */
+    margin-bottom: 20px;
+    background:rgba(245, 245, 245, 0.466);
+    border-radius: 8px;
+    padding: 20px;
+    height: fit-content;
+    float: left;
+    page-break-inside: avoid;
 }
 
 .innerContent {
